@@ -2,13 +2,7 @@ import bean.Game;
 import bean.Media;
 import bean.Movie;
 import bean.Types;
-import com.mongodb.BasicDBObject;
 import com.mongodb.Block;
-import com.mongodb.Cursor;
-import com.mongodb.DBCursor;
-import com.mongodb.MongoClient;
-import com.mongodb.client.FindIterable;
-import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import constant.MongoProperty;
 import dao.DocumentDAO;
@@ -75,22 +69,4 @@ public class Runner {
 //        mongoClient.close();
 
     }
-
-
-    /**
-     * Method gets mongoDB client instance
-     * @return database client
-     */
-    public static MongoClient getClient() {
-        return new MongoClient(MongoProperty.HOST, MongoProperty.PORT);
-    }
-
-    /**
-     * Method gets MongoDatabase
-     * @return database
-     */
-    public static MongoDatabase getDataBase() {
-        return getClient().getDatabase(MongoProperty.DB_NAME);
-    }
-
 }

@@ -1,14 +1,10 @@
 package dao.impl;
 
-import com.mongodb.BasicDBObject;
-import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import com.mongodb.client.model.IndexOptions;
 import constant.MongoProperty;
 import dao.DocumentDAO;
 import dao.manager.MongoDAOManager;
-import org.bson.Document;
 
 import java.util.List;
 

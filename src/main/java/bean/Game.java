@@ -42,7 +42,7 @@ public class Game implements MediaType{
 
     public BasicDBObject getBasicDBObject() {
         BasicDBObject basicDBObject = new BasicDBObject();
-        basicDBObject.put("Type", getName());
+        basicDBObject.put("Type", getName().toString());
         basicDBObject.put("Game_designer", getGameDesigner());
         basicDBObject.put("Platform", getPlatform());
         return basicDBObject;

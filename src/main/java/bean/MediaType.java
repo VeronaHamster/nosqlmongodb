@@ -5,6 +5,6 @@ import org.bson.Document;
 
 public interface MediaType {
 
-//    BasicDBObject getBasicDBObject();
+    BasicDBObject getBasicDBObject();
     Document getDocument();
 }

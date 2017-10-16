@@ -13,9 +13,10 @@ public interface DocumentDAO {
     void saveDocument(Object document);
 
     void saveDocuments(List<Object> documents);
-    void updateDocument();
-    void deleteDocument(Object document);
+    void updateDocument(Object oldDocument, Object newDocument);
+    void deleteDocument(String key, String value);
     Object getAllDocuments();
     Object getDocumentByCriteria();
     void closeConnection();
+    void drop();
 }
